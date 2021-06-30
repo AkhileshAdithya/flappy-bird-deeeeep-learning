@@ -232,7 +232,7 @@ def main(mode):
 
     if mode == 'test':
         model = torch.load(
-            'pretrained_model/current_model_2000000.pth',
+            'pretrained_model/current_model_125000.pth',
             map_location='cpu' if not cuda_is_available else None
         ).eval()
 
